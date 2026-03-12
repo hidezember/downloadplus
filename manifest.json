@@ -9,7 +9,7 @@
 		"48": "icons/48.png",
 		"128": "icons/128.png"
     },
-    "permissions" : ["tabs", "downloads", "downloads.open", "notifications", "activeTab", "storage", "unlimitedStorage", "clipboardWrite", "scripting", "offscreen", "webRequest"],
+    "permissions" : ["tabs", "downloads", "downloads.open", "downloads.ui", "notifications", "activeTab", "storage", "unlimitedStorage", "clipboardWrite", "scripting", "offscreen", "webRequest"],
     "host_permissions": ["*://*/*", "<all_urls>"],
     "offline_enabled": true,
     "options_page": "options.html",
