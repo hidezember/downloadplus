@@ -1,0 +1,31 @@
+{
+	"manifest_version" : 3,
+	"name": "__MSG_extetion_title__",
+	"description": "__MSG_extetion_description__",
+	"version": "1.7.0",
+	"default_locale": "en",
+	"icons": { 
+		"16": "icons/16.png",
+		"48": "icons/48.png",
+		"128": "icons/128.png"
+    },
+    "permissions" : ["tabs", "downloads", "downloads.open", "notifications", "activeTab", "storage", "unlimitedStorage", "clipboardWrite", "scripting", "offscreen", "webRequest"],
+    "host_permissions": ["*://*/*", "<all_urls>"],
+    "offline_enabled": true,
+    "options_page": "options.html",
+    "action": {
+		"default_icon" : {
+			"19" : "icons/19_normal.png"
+		},
+		"default_title": "__MSG_extetion_title__"
+    },
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "content_scripts": [{
+	      "matches": ["http://*/*","https://*/*"],
+	      "css": ["css/animation.min.css"],
+	      "js": ["js/animation.min.js"],
+	      "run_at":"document_end"
+	}]
+}
